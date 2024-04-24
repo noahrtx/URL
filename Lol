@@ -1,0 +1,19 @@
+while True:
+    url = input("Enter a URL (or 'exit' to quit): ")
+    
+    if url.lower() == 'exit':
+        print("Exiting the program...")
+        break
+    
+    first_letter = url[0].lower()
+    
+    if first_letter == 'b':
+        print("You have access to the back rooms network.")
+    elif first_letter == 'c':
+        print("You have access to the secret network.")
+    elif first_letter == 'd':
+        print("You have access to the dark web network.")
+    else:
+        print("You do not have access to any special networks.")
+
+print("Program has ended.")
